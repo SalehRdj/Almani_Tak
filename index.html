@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almani_Tak</title>
+  <link rel="stylesheet" href="/assets/CSS/Style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-MdqCcafa5BLgxBDJ3d/4D292geNL64JyRtSGjEszRUQX9rhL1QkcnId+OT7Yw+D+" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onmouseenter="unhover_pack()">
+  <div class="shdow" onclick="shdow_Close()">
+
+  </div>
+  <section>
+    <header dir="rtl" class="" id="Safhe_Asli" >
+      <div class="header">
+        <div class="header_title p-2">
+          <a href="#Safhe_Asli" class="mx-4">صفحه اصلی</a>
+          <a href="#About_Language" class="mx-4">اطلاعات آموزشی</a>
+          <a href="#About_me" class="mx-4">درباره ما</a>
+          <div class="Package_button">
+            <div class="Packs mx-4" onmouseenter="hover_pack()" onmouseleave="unhover_pack()">
+              <a>پکیج ها</a>
+              <i class="fa-solid fa-sort-down icon"></i>
+              <div class="Package_hover rounded" onmouseleave="unhover_pack()">
+                <a href="/OfflineClass.html" class="px-3 py-3 border-bottom ">دوره آفلاین</a>
+                <a href="/Class.html" class="px-3 py-3">کلاس حضوری</a>
+              </div>
+            </div>
+          </div>
+          <a href="#ContactUs" class="mx-4">تماس با ما</a>
+        </div>
+
+        <div class="Bars-header" onclick="Click_Bars()">
+          <i class="fa-solid fa-bars ms-3"></i>
+        </div>
+        <div class="secondary-header d-lg-none">
+          <i class="fa-solid fa-xmark Close_Bars" onclick="Click_xmark()"></i>
+          <a href="#Safhe_Asli">صفحه اصلی</a>
+          <a href="#About_Language">اطلاعات آموزشی</a>
+          <a href="#About_me">درباره ما</a>
+
+          <div class="p-3 " onclick="Open_Package_Box()">
+            <span class="text-white">پکیج ها</span>
+            <i class="fa-solid fa-sort-down text-white FleshIcon2"></i>
+          </div>
+
+          <div class="Package_Open">
+            <a href="./OfflineClass.html" class="d-block">دوره آفلاین</a>
+            <a href="Class.html" class="d-block ">کلاس حضوری</a>
+          </div>
+          <a href="#ContactUs">تماس با ما</a>
+        </div>
+
+        <div class="header_button me-3">
+          <button class="btn btn-warning me-1 The-header-Button fw-bold SignUp_Button" onclick="Open_SignUp()">ثبت
+            نام</button>
+          <button class="btn btn-success me-1 The-header-Button fw-bold Login_Button"
+            onclick="Button_Open_Login()">ورود</button>
+        </div>
+      </div>
+
+      <div class=" slider_display">
+        <div class="Header_Slider d-none	d-lg-flex flex-row">
+
+          <div class="slide">
+            <img src="/assets/Picture/Pic1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="/assets/Picture/Pic6.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="/assets/Picture/Pic12.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="/assets/Picture/Pic10.jpg" alt="">
+          </div>
+
+          <div>
+            <i class="fa-solid fa-chevron-right icon_right Slide_icon" onclick="Next_Slide()"></i>
+            <i class="fa-solid fa-chevron-left icon_left Slide_icon" onclick="Last_Slide()"></i>
+          </div>
+        </div>
+
+        <div class="Header_Text_BackGround text-light ">
+          <div class="position-relative translate-middle top-50 start-50 fs-1">
+            <p style="color: #ffd558;">یادگیری آلمانی</p>
+            <p class="ms-1"> از اینجا شروع میشه...</p>
+            <br>
+            <p style="color: #ff8f8d;" class="mx-1">با ما </p>
+            <p class="text-light">قدم به قدم جلو برو و </p>
+            <p style="color: #6bff58; display: block;">لذت ببر! </p>
+            <p style="color: #ff8f8d;">تو فقط بخون </p>
+            <p>،</p>
+            <p style="color: #ffd558;">ما کنارت هستیم</p>
+            <p>تا به هدفت برسی</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="signUp_back">
+
+        <form action="" class="signUp_Page">
+          <i class="fa-solid fa-xmark Close_SignUp text-light fs-2" onclick="Close_SignUp_form()"></i>
+          <p class="login-title align-self-center fs-1 fw-bolder">خوش آمدید!</p>
+          <p class="text-light fs-2 align-self-center fw-bolder">ثبت نام</p>
+          <div class="d-flex flex-column login_texts">
+            <p class="text-light">نام کاربری</p>
+            <input type="text" class="name-input mt-1" placeholder=" نام کاربری" required>
+          </div>
+          <div class="d-flex flex-column login_texts mt-4">
+            <p class="text-light ">شماره تلفن</p>
+            <input type="number" class="name-input mt-1" placeholder="09" required>
+          </div>
+          <div class="d-flex flex-column login_texts mt-4">
+            <p class="text-light ">رمز ورود</p>
+            <div>
+              <input type="password" class="name-input mt-1 Singup_eye" placeholder=" رمز ورود" required>
+              <i class="fa-solid fa-eye" onclick="Open_eye_signup()"></i>
+              <i class="fa-solid fa-eye-slash" onclick="Close_eye_signup()"></i>
+            </div>
+          </div>
+          <div class="d-flex flex-column login_texts mt-2">
+            <p class="text-light ">تایید رمز ورود</p>
+            <div>
+              <input type="password" class="name-input mt-1 Singup_eye_confirm" placeholder="  تایید رمز ورود" required>
+              <i class="fa-solid fa-eye con_icon" onclick="Open_eye_signup_con()"></i>
+              <i class="fa-solid fa-eye-slash con_icon_close" onclick="Close_eye_signup_con()"></i>
+            </div>
+          </div>
+          <button class="btn btn-warning w-100 fs-4 fw-bold mt-4">ثبت نام</button>
+          <div class="d-flex mt-3 justify-content-center">
+            <p class="text-light">قبلا یک حساب ساخته اید؟</p>
+            <a class="text-success fw-bolder ms-1" onclick="Login_a_btn()">ورود</a>
+          </div>
+        </form>
+
+
+        <form action="" class="Login_Page">
+          <i class="fa-solid fa-xmark Close_Login text-light fs-2" onclick="Button_Close_Login()"></i>
+          <p class="text-white fs-2 align-self-center fw-bolder">ورود به حساب کاربری</p>
+          <div class="d-flex flex-column login_texts">
+            <p class="text-white ">نام کاربری</p>
+            <input type="text" class="name-input mt-1" placeholder=" نام کاربری" required>
+          </div>
+          <div class="d-flex flex-column login_texts mt-4">
+            <p class="text-white ">رمز ورود</p>
+            <div>
+              <input type="password" class="name-input mt-1 Login_input_eye" placeholder=" رمز ورود" required>
+              <i class="fa-solid fa-eye login_eye h-0" onclick="Open_Login_eye()"></i>
+              <i class="fa-solid fa-eye-slash login_eye_close h-0" onclick="Close_Login_eye()"></i>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-1">
+            <input type="checkbox">
+            <p class="text-light m-0 ms-2">مرا به خاطر بسپار</p>
+          </div>
+          <button class="btn btn-success w-100 fs-4 fw-bold mt-4">ورود</button>
+          <div class="d-flex mt-3 justify-content-center">
+            <p class="text-light">حساب کاربری نساخته اید؟</p>
+            <a class="text-warning fw-bolder ms-1" onclick="SignUp_a_btn()">ثبت نام</a>
+          </div>
+        </form>
+
+      </div>
+    </header>
+
+    <main dir="rtl" id="About_Language">
+
+      <div class="About_Language text-dark">
+        <p class="text-center title_About_Language text-dark">اطلاعات آموزشی</p>
+        <p class="d-flex flex-column px-5"> با ما، آلمانی آسون میشه!
+          ما اینجا نیومدیم که فقط یه سری قواعد حفظ‌کردنی بهت بدیم.
+          ما اومدیم که یه مسیر درست، ساده، واقعی و قابل لمس برات بسازیم. چطور؟
+        </p>
+        <div class="px-4 ">
+          <p>✅ آلمانی رو با مثال‌ها و مکالمه‌های واقعی یاد می‌گیری.</p>
+          <p>✅ گرامر رو با تکنیک‌های ساده، لذت‌بخش و کاربردی می‌فهمی. </p>
+          <p>✅ همزمان گوش می‌کنی، حرف می‌زنی، تمرین می‌کنی و تکرار داری. </p>
+          <p>✅ تمام مطالب بر اساس نیازهای واقعی روزمره طراحی شدن. </p>
+        </div>
+      </div>
+
+      <div class="About_me" id="About_me">
+        <p class="text-center title_About_me text-dark ">درباره ما</p>
+        <p class="text-dark About_me_text ">مؤسسه تازه‌ تأسیس <span style="color: #bb2624;">Almani_Tak</span> با
+          رویکردی نوین در آموزش زبان آلمانی فعالیت خود را آغاز کرده و با بهره‌گیری از استادانی مجرب و باسابقه تلاش دارد
+          تجربه‌ای متفاوت و مؤثر در مسیر یادگیری زبان فراهم کند
+          ترکیب دانش تخصصی، سابقه‌ی چند دهه‌ای تدریس و شناخت دقیق نیازهای زبان‌آموزان، پشتوانه‌ی محتوای آموزشی ماست که
+          بر اساس متدهای به‌روز و استانداردهای آموزشی اروپا طراحی و اجرا می‌شوند
+          در <span style="color: #bb2624;">Almani_Tak</span> کیفیت، نظم و همراهی با زبان‌آموزان از اولویت‌های اصلی ماست
+          و باور داریم آموزش مؤثر نتیجه‌ی اعتماد متقابل و برنامه‌ریزی حرفه‌ای است
+          اگر به دنبال یادگیری اصولی، کاربردی و مطمئن زبان آلمانی هستید، جای درستی آمده‌اید
+        </p>
+      </div>
+
+      <div class="Package_Background">
+        <p class="text-center title_Package text-light ">پکیج ها</p>
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="d-flex flex-column p-3 packageInfo_Display">
+            <span class="fs-2 fw-bold text-center text-amber-300">کلاس حضوری</span>
+            <p class="text-light mt-3">کلاس حضوری زبان آلمانی
+              اگر دوست دارید زبان آلمانی را با حضور در کلاس و همراهی مستقیم با استاد یاد بگیرید، این دوره مخصوص شماست.
+              کلاس‌های حضوری با ظرفیت محدود برگزار می‌شوند تا آموزش بهتر و ارتباط نزدیک‌تری با مدرس داشته باشید.
+              <br>
+              <br>✅ مناسب برای همه‌ی سطوح
+              <br>✅ فضای آموزشی حرفه‌ای و صمیمی
+              <br>✅ پشتیبانی مستقیم از طرف استاد
+              <br>✅ تمرین مکالمه، گرامر و آزمون‌های استاندارد
+              برای اطلاعات بیشتر روی دکمه‌ی زیر کلیک کنید.
+            </p>
+            <span class="text-center">
+              <a href="/Class.html"><button class="btn btn-warning fw-bold  ">جزئیات</button></a>
+            </span>
+          </div>
+
+          <div class="d-flex flex-column packageInfo_Display">
+            <span class="fs-2 fw-bold text-center text-amber-300">دوره آفلاین</span>
+            <p class="text-light mt-3">پکیج آفلاین آموزش زبان آلمانی
+              اگر وقت کلاس رفتن ندارید یا ترجیح می‌دهید با برنامه‌ خودتان زبان یاد بگیرید، این پکیج آفلاین مخصوص شماست.
+              محتوای دوره با دقت و کیفیت بالا ضبط شده و شامل تمرین‌های متنوع، فایل‌های ویدیویی و جزوه است.
+              <br>
+              <br>✅ دسترسی همیشگی به محتوای آموزشی
+              <br>✅ بدون نیاز به اینترنت دائم
+              <br>✅ یادگیری با سرعت دلخواه
+              <br>✅ مناسب برای کسانی که زمان آزاد محدودی دارند
+
+              برای تهیه این پکیج، روی دکمه‌ی زیر کلیک کنید.
+            </p>
+            <span class="text-center">
+              <a href="OfflineClass.html"><button class="btn btn-warning fw-bold  ">جزئیات</button></a>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <footer class="ContactWithUs overflow-hidden" id="ContactUs">
+      <p class="text-center title_Package text-light ">تماس با ما</p>
+      <div class=" mt-5 row" dir="rtl">
+
+
+        <div class="d-flex justify-content-center col-lg-3 col-12 mt-4">
+          <i class="fa-solid fa-phone me-2 text-light Contact_Icons"></i>
+          <div class="d-flex flex-column">
+            <span class="text-light">
+              تماس بگیرید
+            </span>
+            <div class="text-secondary">
+              09188389585 (اراک)
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center col-lg-3 col-12 mt-4">
+          <i class="fa-solid fa-location-dot  me-2 text-light Contact_Icons"></i>
+          <div class="d-flex flex-column">
+            <span class="text-light">
+              نشانی
+            </span>
+            <div class="text-secondary">
+              خ ادبجو، خ گازرانی، پلاک 7
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="d-flex justify-content-center col-lg-3 col-12 mt-4">
+          <i class="fa-solid fa-envelope me-2 text-light Contact_Icons"></i>
+          <div class="d-flex flex-column">
+            <span class="text-light">
+              آدرس ایمیل
+            </span>
+            <div class="text-secondary">
+              saleh.radjaie2007@gmail.com
+            </div>
+          </div>
+        </div>
+
+        <div class=" d-flex justify-content-center col-lg-3 col-12 mt-4">
+          <i class="fa-solid fa-clock me-2 text-light Contact_Icons"></i>
+          <div class="d-flex flex-column">
+            <span class="text-light">
+              ساعت کاری
+            </span>
+            <div class="text-secondary">
+              شنبه تا پنجشنبه 9:30 تا 20:30
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </footer>
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="/assets/Js/Script.js"></script>
+  <script src="/assets/jQuery/jQuery.js"></script>
+
+</body>
+
+</html>

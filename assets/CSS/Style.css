@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Vazir';
+}
+
+body{
+    background-color: #272792 !important;
+}
+
+a{
+    cursor: pointer !important;
+}
+
+@font-face {
+    font-family: 'Yekan';
+    src: url(/assets/Fonts/Yekan.woff);
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url(/assets/Fonts/Vazir.woff);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+.shdow {
+    background-color: #000000bd;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    z-index: 100 !important;
+}
+
+.header {
+    width: 100% !important;
+    height: 80px;
+    background-color: #272792;
+    color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header_title {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: start;
+    height: 80px;
+    align-items: center;
+}
+
+.header_title a {
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.header_button {
+    width: 30%;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.icon {
+    color: aliceblue;
+    font-size: 15px;
+}
+
+.Package_hover {
+    background-color: #C5172E;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    display: none;
+    border-radius: 2px;
+    z-index: 100;
+    text-align: center;
+}
+
+.Package_hover a {
+    color: #ffffff;
+    font-family: 'Yekan' !important;
+    font-size: 18px;
+}
+
+.Packs {
+    cursor: pointer;
+}
+
+.Bars-header {
+    display: none !important;
+    font-size: 30px;
+    width: 70%;
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.secondary-header {
+    background-color: #272792;
+    overflow: hidden;
+    height: 100%;
+    width: 0px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    font-size: 18px;
+    align-items: center;
+    justify-content: start;
+    transition: all 0.5s;
+    z-index: 1000 !important;
+}
+
+.secondary-header a {
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.Close_Bars {
+    font-size: 25px;
+    align-self: start;
+    padding: 10px;
+}
+
+.Package_Open {
+    display: none;
+    text-align: center;
+    transition: all 3s;
+}
+
+.slider_display {
+    display: flex;
+    top: 80px !important;
+    margin-top: 80px;
+    background-color: #ffc800;
+}
+
+.Header_Text_BackGround {
+    width: 40%;
+    height: 700px;
+    background-color: #272792;
+    padding: 60px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0 0 40% 40%;
+}
+
+.Header_Text_BackGround p {
+    display: inline-block;
+}
+
+.Header_Slider {
+    width: 60%;
+    height: 750px;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-color: #272792;
+    display: none;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.Header_Slider img {
+    height: 750px;
+    width: 100%;
+    border-radius: 60px 0 0 0;
+}
+
+.Slide_icon {
+    color: black;
+    font-size: 45px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.icon_right {
+    right: 10px;
+}
+
+.icon_left {
+    left: 10px;
+}
+
+.signUp_back {
+    width: 0;
+    height: 0;
+    background-color: #000000f3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+    transition: all 2s;
+}
+
+.signUp_Page{
+    width: 500px;
+    padding: 20px;
+    background-color: #272792;
+    z-index: 10;
+    border: 8px solid #ffc800;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px #ffffff;
+    display: none;
+    flex-direction: column;
+}
+
+.Login_Page{
+    width: 500px;
+    padding: 20px;
+    background-color: #272792;
+    z-index: 10;
+    border: 8px solid #46df17;
+    box-shadow: 0px 0px 30px #ffffff;
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+}
+
+.Close_SignUp , .Close_Login{
+    cursor: pointer;
+}
+
+.login-title {
+    color: #ffc800;
+}
+
+.name-input {
+    width: 100%;
+    align-self: center; 
+    padding: 7px;
+    font-size: 17;
+    border-radius: 8px;
+    background-color: #0000008a;
+    color: white;
+    border: 1px solid #ffc800;
+}
+
+.fa-eye, .fa-eye-slash, .con_icon, .con_icon_close, .login_eye, .login_eye_close {
+    color: white;
+    position: relative;
+    bottom: 27px;
+    left: 2%;
+    float: left;
+}
+
+.fa-eye-slash , .con_icon_close, .login_eye_close{
+    display: none !important;
+}
+
+.Login_Page .name-input {
+    border: 1px solid #46df17;
+}
+
+.name-input::placeholder {
+    color: #797272b6;
+}
+
+.login_texts p {
+    margin: 0;
+}
+
+.About_Language {
+    width: 100%;
+    background-color: #ffc800;
+    height: auto;
+    padding: 30px;
+    padding-bottom: 60px;
+}
+
+.title_About_Language {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+main p {
+    font-size: 25px;
+}
+
+.About_me {
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 30px;
+    background-color: #e9ffff;
+}
+
+.title_About_me , .title_Package{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.About_me_text {
+    line-height: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.Package_Background{
+    width: 100%;
+    padding: 25px;
+    background-color: #272792;
+}
+
+.packageInfo_Display button{
+    width: 150px;
+}
+
+.ContactWithUs{
+    background-color: #272792;
+    padding:50px;
+}
+
+.Contact_Icons{
+    font-size: 30px;
+}
+@media (max-width : 991px) {
+    .header_title {
+        display: none;
+    }
+
+    .The-header-Button {
+        font-size: x-small !important;
+    }
+
+    .Bars-header {
+        display: flex !important;
+    }
+
+    .Header_Text_BackGround {
+        width: 100%;
+        height: auto;
+    }
+
+    .About_me_text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width : 600px) {
+    .Header_Text_BackGround p {
+        font-size: 24px;
+    }
+
+    .Header_Text_BackGround {
+        padding: 60px;
+        border-radius: 0;
+    }
+
+    .About_me_text {
+        line-height: 25px;
+    }
+
+    main p {
+        font-size: 17px;
+    }
+
+    .packageInfo_Display{
+        width: 100%     ;
+    }
+    .packageInfo_Display:last-child{
+        margin-top: 9%;
+    }
+
+
+}

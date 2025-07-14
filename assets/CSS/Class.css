@@ -1,0 +1,38 @@
+body{
+    background-color: #e9ffff;
+}
+
+main{
+    background-color: #e9ffff;
+}
+
+main p{
+    font-size: 21px;
+    text-shadow: 0 0 10px white;
+}
+
+footer{
+    padding: 20px;
+    background-color: #272792;
+}
+
+.icons:hover{
+    color: #ffc800;
+    transition: all .5s;
+}
+
+.icons{
+    color: white;
+    color: white;
+    font-size: 35px;
+    transition: all 1.5s;
+}
+
+
+@media (max-width : 600px) {
+   main p{
+    font-size: 15px !important;
+   }
+
+
+}
